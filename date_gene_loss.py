@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-
+#
+'''
+This script estimates the date of a gene loss on a selected branch,
+based on the divergence times of the ancestor and descendant.
+'''
 import argparse
 import subprocess
 import re

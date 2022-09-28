@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 #
+'''
+This script parses the summary absrel table with p-values for 
+each branch, each gene, and each transcript;
+it compares p-values of transcripts of one gene and 
+reports this gene if it detects an abnormally high difference.
+'''
 import argparse
 from collections import defaultdict
 import sys

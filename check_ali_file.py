@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 #
+'''
+This script checks multiple sequence alignment for the number of species present
+and if some required species are in the alignment.
+'''
 import argparse
 import pyfastx
 import re

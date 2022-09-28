@@ -2,7 +2,7 @@
 #
 '''
 This script parses aBSREL json output and
-outputs a list of all tested branches with the requested attributed (e.g p-value)
+creates a list of all tested branches with the requested attributed (e.g p-value)
 '''
 import argparse
 import json

@@ -28,7 +28,11 @@ def main():
         fasta_dict[name] = seq
 
     codon_control = set([len(fasta_dict[name]) % 3 for name in fasta_dict])
-    required_species = args.required.split(',')
+    
+    if args.required == '':
+        required_species = fasta_dict.keys()
+    else:
+        required_species = args.required.split(',')
 
     if (len(fasta_dict) >= args.number) and (codon_control == {0}) and (all(i in fasta_dict for i in required_species)):
         print(args.text)
